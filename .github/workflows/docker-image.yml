@@ -19,4 +19,4 @@ jobs:
     - name: Build the Docker image
       run: docker build -t remington.boo .
     - name: Run docker image
-      run: docker run --name remington.boo -p 4000:4173 -d --restart unless-stopped remington.boo
+      run: docker run --name remington.boo -p 4000:3000 -d --restart unless-stopped remington.boo
