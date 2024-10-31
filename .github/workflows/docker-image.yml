@@ -15,8 +15,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Remove existing image
-      run: docker rm -f pokey
+      run: docker rm -f remington.boo
     - name: Build the Docker image
-      run: docker build -t pokey .
+      run: docker build -t remington.boo .
     - name: Run docker image
       run: docker run --name remington.boo -p 4000:4173 -d --restart unless-stopped remington.boo
